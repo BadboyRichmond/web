@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Richmond's - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="Responsivedesigns.css"> 
+    <link rel="stylesheet" href="headerr.css">
+    <link rel="stylesheet" href="generall.css">
+    <style>
+        /* Existing styles... */
+        /* Add responsive navigation styles below your imports */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 25px;
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .hamburger div {
+            background-color: white;
+            height: 3px;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+                flex-direction: column;
+                text-align: center;
+                padding-left: 0;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                display: block;
+                padding: 10px;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Richmond's Portfolio</h1>
+            <p>Term Test 3</p>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="headder.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="home" class="home-section">
+    <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <div class="intro-text">
+            Dive into the world of my creativity and technical expertise. Here, you'll find a blend of innovative projects, technical skills, and professional achievements that illustrate my journey as a web developer. Whether you're interested in collaboration or just browsing, I invite you to explore and connect.
+        </div>
+        <a href="contacts.html" class="cta-button">Get in Touch</a>
+    </div>
+</section>
+
+    <!-- ... Your other sections here ... -->
+
+    <script>
+        function toggleMenu() {
+            var navUl = document.querySelector('nav ul');
+            navUl.classList.toggle('active');
+        }
+    </script>
+ <div id="about" class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                <!-- About me content -->
+            </p>
+        </section>
+    </div>
+
+    <div id="skills" class="container">
+        <section>
+            <h2>Skills</h2>
+            <p>
+                <!-- Skills content -->
+            </p>
+        </section>
+    </div>
+
+    <div id="projects" class="container">
+        <section>
+            <h2>Projects</h2>
+            <div class="grid-3">
+                <!-- Insert projects here -->
+            </div>
+        </section>
+    </div>
+
+    <div id="contact" class="container">
+        <section>
+            <h2>Contact</h2>
+            <p>
+                <!-- Contact form or details -->
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Portfolio Footer Content</p>
+    </footer>
+</body>
+</html>

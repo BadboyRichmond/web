@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Add more general styles */
+/* Set a specific size for all images */
+img {
+    width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+
+/* Or you can set a maximum size */
+img {
+    max-width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+/* This assumes your images have a class named 'social-icon' */
+.social-icon {
+    width: 50px; /* Adjust this size to fit your design */
+    height: auto;
+    display: inline-block; /* This makes the image behave like a text character, which can help with alignment */
+}

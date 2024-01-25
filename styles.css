@@ -1,0 +1,86 @@
+.home-section {
+    background-color: #fff; /* This ensures it's visible against a potentially white background */
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Make sure this is within your @media query for mobile styles */
+@media (max-width: 768px) {
+    /* ... existing styles ... */
+
+    /* Ensure the home section is not accidentally hidden */
+    .home-section {
+        display: block; /* This ensures the section is displayed */
+    }
+}
+
+/* Add this to your styles.css or within a <style> tag in the <head> */
+body, html {
+    height: 100%; /* Ensure full page height */
+    margin: 0; /* Reset default margin */
+}
+
+.container {
+    max-width: 1200px; /* Set a max-width for your content */
+    margin: 0 auto; /* Center your container */
+    padding: 0 20px; /* Add some padding */
+}
+
+header {
+    background-image: linear-gradient(to right, #6dd5fa, #ff758c); /* Gradient background */
+    color: #ffffff;
+    padding: 20px 0; /* Padding for the header */
+    text-align: center; /* Center the text */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Increase the size of the h1 */
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline; /* Display links inline */
+    margin: 0 10px; /* Add horizontal spacing */
+}
+
+nav a {
+    color: #ffffff; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2rem; /* Increase font size */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.social-media-icons img {
+    width: 50px; /* Set a fixed width for social icons */
+    height: auto; /* Keep the aspect ratio */
+    margin: 10px; /* Add some space around icons */
+}
+
+.home-section {
+    padding: 50px 0; /* Add more padding to increase the section's length */
+}
+
+.contact-section {
+    padding: 50px 0; /* Add more padding to increase the section's length */
+}
+
+.cta-button {
+    display: inline-block; /* Make the link a block element */
+    background-color: #ff758c; /* Background color for your button */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the button/link */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.cta-button:hover {
+    background-color: #6dd5fa; /* Change color on hover */
+}

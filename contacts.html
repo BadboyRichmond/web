@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Richmond</title>
+    <style>
+        /* Contact Section Styles */
+        #contact {
+            background: #e8f0fe; /* Soft blue background */
+            padding: 40px;
+            text-align: center;
+            border-top: 5px solid #5cb85c; /* Accent border */
+        }
+
+        #contact h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5rem; /* Larger font size */
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff; /* White background for the form */
+            padding: 30px;
+            border-radius: 8px; /* Rounded corners for the form */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        #contact form input[type="text"],
+        #contact form input[type="email"],
+        #contact form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 4px; /* Rounded borders for inputs */
+            transition: border-color 0.3s; /* Smooth transition for border color */
+        }
+
+        #contact form input[type="text"]:focus,
+        #contact form input[type="email"]:focus,
+        #contact form textarea:focus {
+            border-color: #5cb85c; /* Highlight color when focused */
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background: #5cb85c;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold; /* Make button text bold */
+        }
+
+        #contact form button:hover {
+            background: #4cae4c; /* Darker shade on hover */
+        }
+
+        /* Social Media Links Styles */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s; /* Animation on hover */
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1); /* Slightly larger on hover */
+        }
+
+        .social-links img {
+            width: 40px; /* Set image size */
+            height: auto;
+            border-radius: 50%; /* Circular images for social icons */
+            transition: box-shadow 0.3s;
+        }
+
+        .social-links img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+        }
+
+        /* Add responsiveness */
+        @media screen and (max-width: 768px) {
+            #contact form input[type="text"],
+            #contact form input[type="email"],
+            #contact form textarea {
+                width: calc(100% - 20px);
+            }
+
+            .social-links img {
+                width: 30px; /* Smaller images on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="contact">
+    <h2>Contact Richmond</h2>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/richmondndukwe" target="_blank">
+            <img src="C:\Users\Richmond\Downloads\lindin.jpg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/iam_currency" target="_blank">
+            <img src="file:///C:/Users/Richmond/Downloads/instagram-alt.svg" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com/badboy_richmond" target="_blank">
+            <img src="C:\Users\Richmond\Downloads\5969020.webp" alt="Twitter">
+        </a>
+    </div>
+</section>
+
+</body>
+</html>

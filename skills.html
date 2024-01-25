@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Global background color */
+        }
+
+        #projects {
+            background-color: #e0f7fa; /* Changed to light blue */
+            padding: 4em 2em;
+            text-align: center;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .project {
+            background-color: #ffffff; /* White background for the project cards */
+            border: none;
+            border-radius: 8px;
+            padding: 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            color: #333;
+            font-size: 1.25em;
+        }
+
+        .project p {
+            color: #666;
+            font-size: 1em;
+            margin-top: 0.5em;
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 1em;
+        }
+
+        .project a:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <!-- Example Project 1 -->
+        <div class="project">
+            <img src="C:\Users\Richmond\Downloads\me2.jpg" alt="Termtest1">
+            <h3>TermTest 1</h3>
+            <p>A brief description of Project 1. This project showcases a range of skills in web development and design.</p>
+            <a href="link-to-project-1" target="_blank">View Project</a>
+        </div>
+        <!-- Example Project 2 -->
+        <div class="project">
+            <img src="C:\Users\Richmond\Downloads\me1.jpg" alt="Termtest 2">
+            <h3>TermTest 2</h3>
+            <p>A brief description of Project 2. This project is a complex application that solved real-world problems.</p>
+            <a href="link-to-project-2" target="_blank">View Project</a>
+        </div>
+        <!-- More projects can be added here -->
+		<div class="external-links">
+        <a href="https://durhamcollege.ca/" target="C:\Users\Richmond\Downloads\dc.svg">Durham College</a>
+        <a href="https://www.xmlvalidation.com/" target="C:\Users\Richmond\Downloads\xmll.png">XML Validation</a>
+    </div>
+</section>
+
+</body>
+</html>
+
+<section id="about" class="clearfix">
+    <!-- Your existing content -->
+
+    <!-- External links container -->
+    
+</section>

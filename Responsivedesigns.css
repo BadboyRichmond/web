@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide for mobile */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    /* Add more responsive styles */
+}
+/* Set a specific size for all images */
+img {
+    width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+
+/* Or you can set a maximum size */
+img {
+    max-width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+/* This assumes your images have a class named 'social-icon' */
+.social-icon {
+    width: 50px; /* Adjust this size to fit your design */
+    height: auto;
+    display: inline-block; /* This makes the image behave like a text character, which can help with alignment */
+}

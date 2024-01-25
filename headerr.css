@@ -1,0 +1,76 @@
+/* header.css */
+header {
+    background-color: #333; /* Dark background for sophisticated look */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centers the navigation menu */
+    align-items: center;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Adds space between navigation items */
+}
+
+nav ul li {
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #555; /* Slightly lighter on hover for interactivity */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e90ff; /* Highlight color on hover */
+}
+
+/* Responsive navigation for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center; /* Center text for mobile */
+    }
+}
+/* Set a specific size for all images */
+img {
+    width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+
+/* Or you can set a maximum size */
+img {
+    max-width: 100px; /* or any other size */
+    height: auto; /* this will maintain the aspect ratio */
+}
+/* This assumes your images have a class named 'social-icon' */
+.social-icon {
+    width: 50px; /* Adjust this size to fit your design */
+    height: auto;
+    display: inline-block; /* This makes the image behave like a text character, which can help with alignment */
+}
